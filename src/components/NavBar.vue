@@ -20,14 +20,12 @@ Object.entries(request).forEach(([key, { title, url }]) => {
 
 
 })
-console.log(genreList);
-console.log('=================');
 
 </script>
 <template>
     <!-- <FilterItem v-for="link of links" :key="link.name" :name="link.name"/> -->
     <ul class="flex px-10 overflow-x-auto scrollbar-hide sm:px text-2xl whitespace-nowrap gap-10  md:gap-20">
-            <li v-for="genre of genreList" :key="genre">
+            <li class="transition duration-300 transform hover:scale-125 hover:text-white active:text-red-500" v-for="genre of genreList" :key="genre">
                 <button>
                     {{ genre }}
                 </button>
@@ -43,21 +41,21 @@ console.log('=================');
     </ul> -->
 </template>
 
-<style>
+<!-- <style>
 ul {
-    /* "thin" pour les navigateurs Firefox / */
+    /* "thin" pour les navigateurs Firefox */
         scrollbar-width: thin; 
-        /* "transparent" pour les navigateurs Firefox / */
+        /* "transparent" pour les navigateurs Firefox */
         scrollbar-color: transparent transparent; 
       }
       
-      /* Pour les navigateurs Chrome, Safari et Opera / */
+      /* Pour les navigateurs Chrome, Safari et Opera */
       ul::-webkit-scrollbar { 
         width: 5px;
       }
       
-      /* Pour les navigateurs Chrome, Safari et Opera / */
+      /* Pour les navigateurs Chrome, Safari et Opera */
       ul::-webkit-scrollbar-thumb { 
         background: transparent;
       }
-</style>
+</style> -->
