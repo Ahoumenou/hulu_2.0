@@ -6,7 +6,7 @@ export default {
         url: `/trending/all/week?api_key=${api_key}&language=fr-FR`,
     },
     fetchTopRated: { 
-        title: 'TopRated', 
+        title: 'Top Rated', 
         url: `/movie/top_rated?api_key=${api_key}&language=fr-FR`, 
     },
     fetchActionMovies: { 
@@ -30,7 +30,7 @@ export default {
         url: `/discover/movie?api_key=${api_key}&language=fr-FR&with_genres=9648`, 
     },
     fetchSciFi: { 
-        title: 'SciFi', 
+        title: 'Sci-Fi', 
         url: `/discover/movie?api_key=${api_key}&language=fr-FR&with_genres=878`, 
     },
     fetchWestern: { 
