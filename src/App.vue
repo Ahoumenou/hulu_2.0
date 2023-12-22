@@ -3,6 +3,10 @@
 <!-- <header-comp/> -->
   <main>
 <FilterComp/>
+
+<!-- partie qui sera rendue dynamiquement -->
+<!-- <router-view></router-view> -->
+<RouterView/>
   </main>
 </template>
 
